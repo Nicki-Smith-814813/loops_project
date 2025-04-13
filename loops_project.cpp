@@ -67,3 +67,47 @@ void factorialCalculator() {
 
     cout << "Factorial of " << n << " is: " << result << endl;
 }
+// Function prototype
+void numberPyramid();
+
+// Update menu
+void showMenu() {
+    cout << "========= Utility Program =========" << endl;
+    cout << "1. Factorial Calculator" << endl;
+    cout << "2. Number Pyramid" << endl;
+    cout << "3. Exit" << endl;
+    cout << "===================================" << endl;
+    cout << "Enter your choice: ";
+}
+
+// Add case to main()
+switch (choice) {
+    case 1:
+        factorialCalculator();
+        break;
+    case 2:
+        numberPyramid();
+        break;
+    case 3:
+        cout << "Goodbye!" << endl;
+        break;
+    default:
+        cout << "Invalid choice. Try again." << endl;
+}
+
+// Function to print a pyramid pattern
+void numberPyramid() {
+    int rows;
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for (int i = 1; i <= rows; i++) {
+        for (int space = 1; space <= rows - i; space++) {
+            cout << " ";
+        }
+        for (int num = 1; num <= i; num++) {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+}
