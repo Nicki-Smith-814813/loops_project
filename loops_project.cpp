@@ -111,3 +111,45 @@ void numberPyramid() {
         cout << endl;
     }
 }
+// Function prototype
+void sumEvenOrOdd();
+
+// Update menu
+void showMenu() {
+    cout << "1. Factorial Calculator" << endl;
+    cout << "2. Number Pyramid" << endl;
+    cout << "3. Sum of Even or Odd Numbers" << endl;
+    cout << "4. Exit" << endl;
+}
+
+// Add case in switch
+case 3:
+    sumEvenOrOdd();
+    break;
+
+// Function to sum even or odd numbers up to a limit
+void sumEvenOrOdd() {
+    char choice;
+    int n, sum = 0, i = 1;
+
+    cout << "Choose (E)ven or (O)dd: ";
+    cin >> choice;
+    choice = tolower(choice);
+
+    while (choice != 'e' && choice != 'o') {
+        cout << "Invalid. Enter E for even or O for odd: ";
+        cin >> choice;
+        choice = tolower(choice);
+    }
+
+    cout << "Enter upper limit: ";
+    cin >> n;
+
+    do {
+        if (choice == 'e' && i % 2 == 0) sum += i;
+        else if (choice == 'o' && i % 2 != 0) sum += i;
+        i++;
+    } while (i <= n);
+
+    cout << "Sum of " << (choice == 'e' ? "even" : "odd") << " numbers up to " << n << ": " << sum << endl;
+}
