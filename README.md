@@ -7,7 +7,8 @@ This C++ program is a simple utility tool that demonstrates various loop constru
 - Sum of Even or Odd Numbers (do-while loop)
 - String Reversal (while loop)
 - Fibonacci Sequences
-- Palindrome Checker 
+- Palindrome Checker
+  
 The program is menu-driven and allows users to interact with all the options repeatedly until they choose to exit.
 
 ## Compilation & Execution (in GitHub CodeSpaces)
