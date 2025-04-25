@@ -15,5 +15,5 @@ The program is menu-driven and allows users to interact with all the options rep
 
 1. Open the `loops_project.cpp` file in CodeSpaces.
 2. Compile using the terminal:
-   ```bash
-   g++ -o loops_project loops_project.cpp
+g++ -o loops_project loops_project.cpp
+./loops_project
