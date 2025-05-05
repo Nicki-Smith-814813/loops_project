@@ -14,6 +14,6 @@ The program is menu-driven and allows users to interact with all the options rep
 ## Compilation & Execution (in GitHub CodeSpaces)
 
 1. Open the `loops_project.cpp` file in CodeSpaces.
-2. Compile using the terminal:
-g++ -o loops_project loops_project.cpp
-./loops_project
+2. Install Makefile Tools
+3. in the terminal type make run
+4. It will now run.
